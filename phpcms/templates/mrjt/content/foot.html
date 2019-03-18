@@ -1,0 +1,53 @@
+<div class="footer-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-5">
+                    <div class="copyright-text">
+                        <p>电话&nbsp;:&nbsp;028-85583837 &nbsp;&nbsp;邮箱&nbsp;:&nbsp;2237777777@qq.com &nbsp;&nbsp; 地址&nbsp;:&nbsp;四川成都市临江东路锦江花园城钻石座15楼</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-7">
+                    <div class="usefull-link">
+                        <ul>
+                            <li>备案号：<a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备18016058号</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2016 iGlyphic.com. All Rights Reserved</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-7">
+                    <div class="usefull-link">
+                        <ul>
+                        {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+                            <li><a href="{siteurl($siteid)}"><span>首页</span></a></li>
+                             <li>|</li>
+                            {loop $data $r}  
+                            <li><a href="{$r[url]}"><span>{$r[catname]}</span></a></li>
+                            <li>|</li>
+                            {/loop}
+                        {/pc}
+                        {php echo runhook('glogal_menu')}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+    <!-- == jQuery Librery == -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- == Bootsrap js File == -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- == Owl carousel == -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- == menuzord js file == -->
+    <script src="js/menuzord.js"></script>
+    <!-- == custom Js File == -->
+    <script src="js/custom.js"></script>
+    <script src="js/chanye.js"></script>
+</body>
+
+</html>

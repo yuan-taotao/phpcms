@@ -1,0 +1,393 @@
+﻿/*    General Color
+-----------------------*/
+/*    Font Color
+--------------------------------*/
+/*      Font
+-------------------*/
+/* Prefix */
+/*  To make Responsive
+---------------------------------------------------------------------- /
+*	1 - @media (max-width: 1280px)
+*   2 - @media (max-width: 1200px)
+*   3 - @media (min-width: 992px) and (max-width: 1199px)
+*   4 - @media (min-width: 768px) and (max-width: 991px)
+*   5 - @media (max-width: 767px)
+*   6 - @media (max-width: 667px)
+*   7 - @media (max-width: 480px)
+*   8 - @media (max-width: 360px)
+*   9 - @media (max-width: 320px)
+*
+---------------------------------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  html {
+    -webkit-text-size-adjust: none;
+  }
+}
+
+
+
+@media (min-width: 1680px) {
+
+    .about-experience-area .content {
+        margin-top: 112px;
+    }
+
+}
+/* Large Desktops */
+/* End 1280 */
+/* Laptops or Smaller Screens */
+/* Portrait tablets and medium desktops */
+@media (max-width: 1199px) {
+  .home-chose-us-area .inner {
+    background: transparent;
+  }
+}
+@media (max-width: 992px) {
+  .single-expart .image img {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .partner-content .detail {
+    border-right: 0;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (max-width: 768px) {
+  .copyright-text {
+    text-align: center;
+  }
+  .footer-bar .usefull-link ul {
+    text-align: center;
+  }
+  .menuzord .showhide {
+    margin-top: 10px;
+  }
+  .menuzord .showhide em {
+    background: #fff none repeat scroll 0 0;
+  }
+  .menu-area .search-box {
+    display: none;
+  }
+  .menu-area .search-box input {
+    margin-top: 15px;
+  }
+  .menu-area .search-box a {
+    top: 40px;
+  }
+  .menu-area .menuzord-menu li span.indicator {
+    display: block;
+  }
+  .menu-area li.active > a::before {
+    display: none;
+  }
+  .menu-area li.active > a::after {
+    display: none;
+  }
+  .menu-area li a::before {
+    display: none;
+  }
+  .menu-area li a::after {
+    display: none;
+  }
+  .single-complete-project .pdr0 {
+    padding-right: 15px;
+  }
+  .single-complete-project .content {
+    margin-bottom: 10px;
+  }
+  .single-complete-project .image {
+    margin-top: 10px;
+  }
+  .single-complete-project .image img {
+    width: 100%;
+  }
+  .res-big img {
+    width: 100%;
+  }
+  .res-mid img {
+    width: 100%;
+  }
+  .project-detail-image img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-detail-body {
+    text-align: center;
+  }
+  .project-detail-body img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-detail-body .partner-heading {
+    text-align: left;
+  }
+  .project-detail-overview {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .single-project-detail .pdr0 {
+    padding-right: 15px;
+  }
+  .about-experience-area .content {
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
+  .about-experience-area .pdr0 {
+    padding-right: 15px;
+  }
+  .about-service-provider .image {
+    padding-top: 68px;
+  }
+  .about-subscibe-area .content p {
+    line-height: 24px;
+  }
+  .about-subscibe-area .content p span {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  /*  Mission */
+  .mission-body .single-box {
+    text-align: center;
+  }
+  .mission-body .single-box .all-year {
+    text-align: left;
+  }
+  .mission-body .team-area img {
+    display: none;
+  }
+  /*  Paretner */
+  .partner-area-tab ul.nav.nav-tabs {
+    display: block;
+  }
+  .partner-area-tab ul li {
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px !important;
+    width: 42%;
+  }
+  .partner-content {
+    text-align: center;
+  }
+  /*  career */
+  .single-career {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .single-career img {
+    width: 100%;
+  }
+  .career-overview {
+    text-align: center;
+  }
+  .all-job-feature .no-padding {
+    padding-right: 15px !important;
+  }
+  /*  Home */
+  .home-two-tower .pdr0 {
+    padding-right: 15px;
+  }
+  .home-best-service-provider .image {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .home-best-service-provider .image .image-one {
+    display: none;
+  }
+  .home-best-service-provider .image .image-two {
+    text-align: center;
+    margin-right: auto;
+  }
+  .home-two-news .single {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-two-news .single .image img {
+    width: 100%;
+  }
+  .home-two-tower .tower-left {
+    padding-left: 0;
+  }
+}
+/* End 768 */
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .single-news {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .topbar-area .topbar-social ul {
+    text-align: center;
+  }
+  .topbar-area .contact-number {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .quick-contact {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  .contact-form .pdl0 {
+    padding-left: 15px;
+  }
+  .single-project {
+    text-align: center;
+  }
+  .single-project img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio-filter .controls ul {
+    text-align: center;
+  }
+  .bottom-area {
+    text-align: center;
+  }
+  .bottom-area .address {
+    padding-top: 13px;
+  }
+  .bottom-area .address img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bottom-area .resent-post {
+    padding-bottom: 19px;
+  }
+  .bottom-area .resent-post .date {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bottom-area .resent-post p {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .bottom-area .mail-subscribe {
+    padding-top: 51px;
+  }
+  .single-expart {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .single-expart .image img {
+    width: 100%;
+  }
+  /*  Service     */
+  .service-overview-two-image .images {
+    text-align: center;
+  }
+  .service-overview-two-image .images img {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .service-body {
+    text-align: center;
+  }
+  .single-service {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .single-service img {
+    width: 100%;
+  }
+  .service-overview ul {
+    padding-right: 0;
+  }
+  /*  Home */
+  .home-single-service {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-single-service .image img {
+    width: 100%;
+  }
+  .home-single-service .content {
+    padding: 30px;
+    text-align: center;
+  }
+  .home-single-service .content i {
+    position: static;
+  }
+  .home-single-service .content h4 {
+    padding: 10px 0;
+  }
+  .home-single-service .content h4 br {
+    display: none;
+  }
+  .home-single-service .pdr0 {
+    padding-right: 15px;
+  }
+  .home-single-work {
+    text-align: center;
+  }
+  .home-chose-us-area .expart-heading {
+    text-align: center;
+  }
+  .home-chose-us-area .expart-heading .divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .single-chose-us {
+    text-align: center;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-project-area .nav {
+    display: block;
+    text-align: center;
+  }
+  /*.home-project-area .nav li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 49%;
+  }*/
+}
+/* End 767 */
+/* iPhone 6 & 6 Plus */
+@media (max-width: 667px) {
+  .portfolio-filter .controls ul li a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .single-ongoing-project img {
+    /*min-height: 250px;*/
+  }
+  .single-ongoing-project .content h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+}
+/* Phone Standard Width */
+@media (max-width: 480px) {
+  .single-ongoing-project img {
+    width: 100%;
+  }
+  .single-ongoing-project .content p {
+    padding-top: 5px;
+  }
+  .error-body .content h1 {
+    font-size: 150px;
+  }
+}
+/* Extra smaller */
+@media (max-width: 360px) {
+  /*  paretner */
+  .partner-area-tab ul li {
+    width: 78%;
+  }
+}
+/* iPhone 4s and Smaller Screen */

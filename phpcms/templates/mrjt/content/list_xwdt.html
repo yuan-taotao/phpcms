@@ -1,0 +1,54 @@
+{template 'content','head'}
+    <!-- //Page Banner  -->
+    <!-- == Main Content ==-->
+    <div class="news-body">
+        <div class="banner-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul>
+                            <li><a href="{APP_PATH}">首页</a></li>
+                            <li>>></li>
+                            <li><a href="">{catpos($catid, ' | ')}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row news">
+                <!-- 新闻 -->
+
+			 {pc:content action="lists" catid="$catid"}
+                {loop $data $r}
+                <div class="col-md-6 col-sm-6">
+                	<div class="home-single-service second">
+                		<div class="row">
+                			<div class="col-sm-6 pdr0">
+                				<div class="image">
+                					<img src="{$r['thumb']}" class="img-responsive" alt="service image">
+                				</div>
+                			</div>
+                			<div class="col-sm-6 pdr0">
+                				<div class="content">
+                					<h4>{$r['title']}</h4>
+                					<p class="hidden-sm">{$r['description']}</p>
+                					<a href="{$r['url']}">查看详情</a>
+                				</div>
+                			</div>
+                		</div>
+                	</div>
+                </div>
+                {/loop}
+                            
+             {/pc}
+
+
+            </div>
+        </div>
+    </div>
+    <!--// Main Content -->
+    <!-- == Footer==-->
+    <!-- // End Footer middle -->
+    <!-- == Footer bar three == -->
+          {template 'content','foot'}

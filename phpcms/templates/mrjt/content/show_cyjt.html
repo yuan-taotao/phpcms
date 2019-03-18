@@ -1,0 +1,78 @@
+{template 'content','head'}
+    <!-- //Page Banner  -->
+    <!-- == Main Content ==-->
+    <div class="news-detail-body">
+        <div class="banner-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul>
+                            <li><a href="{APP_PATH}">首页</a></li>
+                            <li>>></li>
+                            <li><a href="">{catpos($catid, ' | ')} </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="news-dtails-banner">
+                        <div class="banner-content-news">
+                            <h2 class="title">{$rs['title']}</h2>
+                            <p class="body">{$rs['description']}</p>
+                          
+                            {$rs['content']}
+                        </div>
+                    </div>
+                    <ul class='jt-case banner'>
+                    	
+
+                    	{loop $pictureurls $pic_k $r}
+                  	
+						<li class="col-md-3">
+							<img class="img-responsive" src="{$r[url]}" alt="">
+						</li>
+						
+						{/loop}
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <aside class="news-sidebar">
+                        <div class="about">
+                            <h2>关于铭仁集团</h2>
+                            <p>
+                                铭仁集团，是一家以资产管理、投资咨询、工程建设、建筑劳务、景观工程、农业科技、生物科技、能源科技、服装贸易为一体的大型民营企业。
+                            </p>
+                        </div>
+                        <div class="post">
+                            <h2>集团公司</h2>
+
+ 						{pc:content action="lists" catid="$catid"}
+                    		{loop $data $r}
+                    		<!-- <?php 
+                    		var_dump($r);
+                    		?> -->
+                            <div class="row" style="margin-top: 20px;">
+                            	<a href="{$r['url']}">
+                            		<div class="col-md-4">
+                            			<img class="img-rounded img-responsive" src="{$r['thumb']}" alt="">
+                            		</div>	
+                            		<div class="clo-md-8">{$r['title']}</div>
+                            	</a>	
+                            </div>
+		 			 		{/loop}           
+		                {/pc}
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// Main Content -->
+    <!-- == Footer==-->
+    <!-- // End Footer middle -->
+    <!-- == Footer bar three == -->
+    {template 'content','foot'}
